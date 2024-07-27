@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.grandP{
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.child{
+    margin-bottom: 50px;
+}
+
+.parent{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* background-color: rgba(255, 0, 0, 0.178); */
+    max-width: 70vw;
+}
+
+
+.title{
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: #2D3A4C;
+    margin-bottom: 25px;
+}
+.p-parent>p{
+    font-family: Poppins;
+    margin-bottom: 12px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: #667384;
+}
+
+.socialmedsvg{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.fit-content{
+    max-width: 60%;
+}
+
+
+.address-styles>p{
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+
+    color: #667384;
+    margin-bottom: 30px;
+}
+
+.address-styles-a{
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+    margin-top: 60px;
+    color: #667384;
+
+}
+
+.bottom-border{
+    border-bottom: 1px solid #667384; 
+    height: 1px; 
+    width: 70vw;
+}
+
+.copyright{
+    display: flex;
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: left;
+    justify-content: space-between;
+    color: #667384;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+
+
+@media (max-width:768px)  {
+
+    .parent{
+        flex-wrap: wrap;
+        min-width: 90vw;
+        gap: 20%;
+    }
+
+    .fit-content{
+        max-width: 100%;
+    }
+
+    .copyright{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bottom-border{
+        width: 100vw;
+    }
+
+}
